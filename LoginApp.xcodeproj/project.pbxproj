@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BBF4C4517EEE50700B4557A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBF4C4417EEE50700B4557A /* UIKit.framework */; };
+		0BBF4C4717EEE50700B4557A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBF4C4617EEE50700B4557A /* Foundation.framework */; };
+		0BBF4C4917EEE50700B4557A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBF4C4817EEE50700B4557A /* CoreGraphics.framework */; };
+		0BBF4C4F17EEE50700B4557A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C4D17EEE50700B4557A /* InfoPlist.strings */; };
+		0BBF4C5117EEE50700B4557A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5017EEE50700B4557A /* main.m */; };
+		0BBF4C5517EEE50700B4557A /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5417EEE50700B4557A /* BIDAppDelegate.m */; };
+		0BBF4C5717EEE50700B4557A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5617EEE50700B4557A /* Default.png */; };
+		0BBF4C5917EEE50700B4557A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5817EEE50700B4557A /* Default@2x.png */; };
+		0BBF4C5B17EEE50700B4557A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5A17EEE50700B4557A /* Default-568h@2x.png */; };
+		0BBF4C5E17EEE50700B4557A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5C17EEE50700B4557A /* MainStoryboard_iPhone.storyboard */; };
+		0BBF4C6117EEE50700B4557A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5F17EEE50700B4557A /* MainStoryboard_iPad.storyboard */; };
+		0BBF4C6417EEE50700B4557A /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF4C6317EEE50700B4557A /* BIDViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BBF4C4117EEE50700B4557A /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBF4C4417EEE50700B4557A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0BBF4C4617EEE50700B4557A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BBF4C4817EEE50700B4557A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0BBF4C4C17EEE50700B4557A /* LoginApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginApp-Info.plist"; sourceTree = "<group>"; };
+		0BBF4C4E17EEE50700B4557A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BBF4C5017EEE50700B4557A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BBF4C5217EEE50700B4557A /* LoginApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoginApp-Prefix.pch"; sourceTree = "<group>"; };
+		0BBF4C5317EEE50700B4557A /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		0BBF4C5417EEE50700B4557A /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		0BBF4C5617EEE50700B4557A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0BBF4C5817EEE50700B4557A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0BBF4C5A17EEE50700B4557A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0BBF4C5D17EEE50700B4557A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0BBF4C6017EEE50700B4557A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0BBF4C6217EEE50700B4557A /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		0BBF4C6317EEE50700B4557A /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BBF4C3E17EEE50700B4557A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBF4C4517EEE50700B4557A /* UIKit.framework in Frameworks */,
+				0BBF4C4717EEE50700B4557A /* Foundation.framework in Frameworks */,
+				0BBF4C4917EEE50700B4557A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBF4C3817EEE50700B4557A = {
+			isa = PBXGroup;
+			children = (
+				0BBF4C4A17EEE50700B4557A /* LoginApp */,
+				0BBF4C4317EEE50700B4557A /* Frameworks */,
+				0BBF4C4217EEE50700B4557A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BBF4C4217EEE50700B4557A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF4C4117EEE50700B4557A /* LoginApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BBF4C4317EEE50700B4557A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF4C4417EEE50700B4557A /* UIKit.framework */,
+				0BBF4C4617EEE50700B4557A /* Foundation.framework */,
+				0BBF4C4817EEE50700B4557A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BBF4C4A17EEE50700B4557A /* LoginApp */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF4C5317EEE50700B4557A /* BIDAppDelegate.h */,
+				0BBF4C5417EEE50700B4557A /* BIDAppDelegate.m */,
+				0BBF4C5C17EEE50700B4557A /* MainStoryboard_iPhone.storyboard */,
+				0BBF4C5F17EEE50700B4557A /* MainStoryboard_iPad.storyboard */,
+				0BBF4C6217EEE50700B4557A /* BIDViewController.h */,
+				0BBF4C6317EEE50700B4557A /* BIDViewController.m */,
+				0BBF4C4B17EEE50700B4557A /* Supporting Files */,
+			);
+			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		0BBF4C4B17EEE50700B4557A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF4C4C17EEE50700B4557A /* LoginApp-Info.plist */,
+				0BBF4C4D17EEE50700B4557A /* InfoPlist.strings */,
+				0BBF4C5017EEE50700B4557A /* main.m */,
+				0BBF4C5217EEE50700B4557A /* LoginApp-Prefix.pch */,
+				0BBF4C5617EEE50700B4557A /* Default.png */,
+				0BBF4C5817EEE50700B4557A /* Default@2x.png */,
+				0BBF4C5A17EEE50700B4557A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BBF4C4017EEE50700B4557A /* LoginApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BBF4C6717EEE50700B4557A /* Build configuration list for PBXNativeTarget "LoginApp" */;
+			buildPhases = (
+				0BBF4C3D17EEE50700B4557A /* Sources */,
+				0BBF4C3E17EEE50700B4557A /* Frameworks */,
+				0BBF4C3F17EEE50700B4557A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginApp;
+			productName = LoginApp;
+			productReference = 0BBF4C4117EEE50700B4557A /* LoginApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BBF4C3917EEE50700B4557A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = keenray;
+			};
+			buildConfigurationList = 0BBF4C3C17EEE50700B4557A /* Build configuration list for PBXProject "LoginApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BBF4C3817EEE50700B4557A;
+			productRefGroup = 0BBF4C4217EEE50700B4557A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BBF4C4017EEE50700B4557A /* LoginApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BBF4C3F17EEE50700B4557A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBF4C4F17EEE50700B4557A /* InfoPlist.strings in Resources */,
+				0BBF4C5717EEE50700B4557A /* Default.png in Resources */,
+				0BBF4C5917EEE50700B4557A /* Default@2x.png in Resources */,
+				0BBF4C5B17EEE50700B4557A /* Default-568h@2x.png in Resources */,
+				0BBF4C5E17EEE50700B4557A /* MainStoryboard_iPhone.storyboard in Resources */,
+				0BBF4C6117EEE50700B4557A /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BBF4C3D17EEE50700B4557A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBF4C5117EEE50700B4557A /* main.m in Sources */,
+				0BBF4C5517EEE50700B4557A /* BIDAppDelegate.m in Sources */,
+				0BBF4C6417EEE50700B4557A /* BIDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0BBF4C4D17EEE50700B4557A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBF4C4E17EEE50700B4557A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0BBF4C5C17EEE50700B4557A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBF4C5D17EEE50700B4557A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0BBF4C5F17EEE50700B4557A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBF4C6017EEE50700B4557A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BBF4C6517EEE50700B4557A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BBF4C6617EEE50700B4557A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BBF4C6817EEE50700B4557A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoginApp/LoginApp-Prefix.pch";
+				INFOPLIST_FILE = "LoginApp/LoginApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0BBF4C6917EEE50700B4557A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoginApp/LoginApp-Prefix.pch";
+				INFOPLIST_FILE = "LoginApp/LoginApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BBF4C3C17EEE50700B4557A /* Build configuration list for PBXProject "LoginApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBF4C6517EEE50700B4557A /* Debug */,
+				0BBF4C6617EEE50700B4557A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BBF4C6717EEE50700B4557A /* Build configuration list for PBXNativeTarget "LoginApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBF4C6817EEE50700B4557A /* Debug */,
+				0BBF4C6917EEE50700B4557A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BBF4C3917EEE50700B4557A /* Project object */;
+}
