@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B135F4117F7C219007B34C5 /* SinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B135F4017F7C219007B34C5 /* SinaViewController.m */; };
 		0B19B23217EFEF57004D1810 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B19B1E117EFEF57004D1810 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0B19B23317EFEF57004D1810 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B19B1E417EFEF57004D1810 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0B19B23417EFEF57004D1810 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B19B1E617EFEF57004D1810 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -49,11 +50,15 @@
 		0BBF4C5E17EEE50700B4557A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5C17EEE50700B4557A /* MainStoryboard_iPhone.storyboard */; };
 		0BBF4C6117EEE50700B4557A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBF4C5F17EEE50700B4557A /* MainStoryboard_iPad.storyboard */; };
 		0BBF4C6417EEE50700B4557A /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF4C6317EEE50700B4557A /* BIDViewController.m */; };
-		0BE4B7F317F2C44E0077B845 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4B7F217F2C44E0077B845 /* SecondViewController.m */; };
 		0BEA922717F130EA002AD91B /* MD5Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA922617F130EA002AD91B /* MD5Hash.m */; };
+		0BFF1DCC17F6673600F28C43 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF1DCB17F6673600F28C43 /* SecondViewController.m */; };
+		0BFF1DD117F67FA200F28C43 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFF1DCE17F67FA200F28C43 /* libWeiboSDK.a */; };
+		0BFF1DD217F67FA200F28C43 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0BFF1DCF17F67FA200F28C43 /* WeiboSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B135F3F17F7C219007B34C5 /* SinaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SinaViewController.h; path = ../SinaViewController.h; sourceTree = "<group>"; };
+		0B135F4017F7C219007B34C5 /* SinaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SinaViewController.m; path = ../SinaViewController.m; sourceTree = "<group>"; };
 		0B19B1E017EFEF57004D1810 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		0B19B1E117EFEF57004D1810 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		0B19B1E217EFEF57004D1810 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -129,10 +134,13 @@
 		0BBF4C6017EEE50700B4557A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0BBF4C6217EEE50700B4557A /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		0BBF4C6317EEE50700B4557A /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
-		0BE4B7F117F2C44E0077B845 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		0BE4B7F217F2C44E0077B845 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		0BEA922517F130EA002AD91B /* MD5Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Hash.h; sourceTree = "<group>"; };
 		0BEA922617F130EA002AD91B /* MD5Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5Hash.m; sourceTree = "<group>"; };
+		0BFF1DCA17F6673600F28C43 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0BFF1DCB17F6673600F28C43 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0BFF1DCE17F67FA200F28C43 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		0BFF1DCF17F67FA200F28C43 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		0BFF1DD017F67FA200F28C43 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,7 @@
 				0B19B25817EFEF87004D1810 /* CFNetwork.framework in Frameworks */,
 				0BBF4C4517EEE50700B4557A /* UIKit.framework in Frameworks */,
 				0BBF4C4717EEE50700B4557A /* Foundation.framework in Frameworks */,
+				0BFF1DD117F67FA200F28C43 /* libWeiboSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 		0BBF4C3817EEE50700B4557A = {
 			isa = PBXGroup;
 			children = (
+				0BFF1DCD17F67FA200F28C43 /* libWeiboSDK */,
 				0B19B1DF17EFEF57004D1810 /* Classes */,
 				0BBF4C4A17EEE50700B4557A /* LoginApp */,
 				0BBF4C4317EEE50700B4557A /* Frameworks */,
@@ -274,6 +284,8 @@
 		0BBF4C4A17EEE50700B4557A /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				0B135F3F17F7C219007B34C5 /* SinaViewController.h */,
+				0B135F4017F7C219007B34C5 /* SinaViewController.m */,
 				0BEA922517F130EA002AD91B /* MD5Hash.h */,
 				0BEA922617F130EA002AD91B /* MD5Hash.m */,
 				0BBF4C5317EEE50700B4557A /* BIDAppDelegate.h */,
@@ -283,8 +295,8 @@
 				0BBF4C6217EEE50700B4557A /* BIDViewController.h */,
 				0BBF4C6317EEE50700B4557A /* BIDViewController.m */,
 				0BBF4C4B17EEE50700B4557A /* Supporting Files */,
-				0BE4B7F117F2C44E0077B845 /* SecondViewController.h */,
-				0BE4B7F217F2C44E0077B845 /* SecondViewController.m */,
+				0BFF1DCA17F6673600F28C43 /* SecondViewController.h */,
+				0BFF1DCB17F6673600F28C43 /* SecondViewController.m */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -301,6 +313,16 @@
 				0BBF4C5A17EEE50700B4557A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BFF1DCD17F67FA200F28C43 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0BFF1DCE17F67FA200F28C43 /* libWeiboSDK.a */,
+				0BFF1DCF17F67FA200F28C43 /* WeiboSDK.bundle */,
+				0BFF1DD017F67FA200F28C43 /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +383,7 @@
 				0BBF4C5B17EEE50700B4557A /* Default-568h@2x.png in Resources */,
 				0BBF4C5E17EEE50700B4557A /* MainStoryboard_iPhone.storyboard in Resources */,
 				0BBF4C6117EEE50700B4557A /* MainStoryboard_iPad.storyboard in Resources */,
+				0BFF1DD217F67FA200F28C43 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +423,8 @@
 				0B19B24717EFEF57004D1810 /* ASIS3ServiceRequest.m in Sources */,
 				0B19B26A17F001A1004D1810 /* Reachability.m in Sources */,
 				0BEA922717F130EA002AD91B /* MD5Hash.m in Sources */,
-				0BE4B7F317F2C44E0077B845 /* SecondViewController.m in Sources */,
+				0BFF1DCC17F6673600F28C43 /* SecondViewController.m in Sources */,
+				0B135F4117F7C219007B34C5 /* SinaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +523,14 @@
 				GCC_PREFIX_HEADER = "LoginApp/LoginApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = "LoginApp/LoginApp-Info.plist";
-				OTHER_LDFLAGS = "-lxml2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libWeiboSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -512,7 +543,14 @@
 				GCC_PREFIX_HEADER = "LoginApp/LoginApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = "LoginApp/LoginApp-Info.plist";
-				OTHER_LDFLAGS = "-lxml2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libWeiboSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
