@@ -13,6 +13,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [WeiboSDK registerApp:@"318745286"];
+    [WeiboSDK enableDebugMode:YES];
     return YES;
 }
 							
@@ -43,4 +45,31 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void) didReceiveWeiboRequest:(WBBaseRequest *)request
+{
+   
+}
+
+-(void) didReceiveWeiboResponse:(WBBaseResponse *)response  {
+    NSString *title = @"认证结果";
+    NSString *message = [NSString stringWithFormat:@"响应状态: %d\nresponse.userId: %@\nresponse.accessToken: %@\n响应UserInfo数据: %@\n原请求UserInfo数据: %@",
+                         response.statusCode, [(WBAuthorizeResponse *)response userID], [(WBAuthorizeResponse *)response accessToken], response.userInfo, response.requestUserInfo];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"确定"
+                                          otherButtonTitles:nil];
+    
+  // self.wbtoken = [(WBAuthorizeResponse *)response accessToken];
+    
+    [alert show];
+    //[alert release];
+}
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [WeiboSDK handleOpenURL:url delegate:self];
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [WeiboSDK handleOpenURL:url delegate:self];
+}
 @end
