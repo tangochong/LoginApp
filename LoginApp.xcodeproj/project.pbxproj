@@ -38,6 +38,8 @@
 		0B19B26A17F001A1004D1810 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B19B26917F001A1004D1810 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0B19B26D17F030B1004D1810 /* JSONKit.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B19B26B17F0277D004D1810 /* JSONKit.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0B19B26E17F030B1004D1810 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B19B26C17F0277D004D1810 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0BAFD2C3184DE0DC00028BA5 /* ba.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BAFD2C2184DE0DC00028BA5 /* ba.png */; };
+		0BAFD2C9184DE21C00028BA5 /* FirstLoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFD2C8184DE21C00028BA5 /* FirstLoViewController.m */; };
 		0BBF4C4517EEE50700B4557A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBF4C4417EEE50700B4557A /* UIKit.framework */; };
 		0BBF4C4717EEE50700B4557A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBF4C4617EEE50700B4557A /* Foundation.framework */; };
 		0BBF4C4917EEE50700B4557A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBF4C4817EEE50700B4557A /* CoreGraphics.framework */; };
@@ -117,6 +119,9 @@
 		0B19B26917F001A1004D1810 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		0B19B26B17F0277D004D1810 /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		0B19B26C17F0277D004D1810 /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		0BAFD2C2184DE0DC00028BA5 /* ba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ba.png; sourceTree = "<group>"; };
+		0BAFD2C7184DE21C00028BA5 /* FirstLoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLoViewController.h; sourceTree = "<group>"; };
+		0BAFD2C8184DE21C00028BA5 /* FirstLoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLoViewController.m; sourceTree = "<group>"; };
 		0BBF4C4117EEE50700B4557A /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BBF4C4417EEE50700B4557A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0BBF4C4617EEE50700B4557A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -284,6 +289,8 @@
 		0BBF4C4A17EEE50700B4557A /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				0BAFD2C7184DE21C00028BA5 /* FirstLoViewController.h */,
+				0BAFD2C8184DE21C00028BA5 /* FirstLoViewController.m */,
 				0B135F3F17F7C219007B34C5 /* SinaViewController.h */,
 				0B135F4017F7C219007B34C5 /* SinaViewController.m */,
 				0BEA922517F130EA002AD91B /* MD5Hash.h */,
@@ -304,6 +311,7 @@
 		0BBF4C4B17EEE50700B4557A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0BAFD2C2184DE0DC00028BA5 /* ba.png */,
 				0BBF4C4C17EEE50700B4557A /* LoginApp-Info.plist */,
 				0BBF4C4D17EEE50700B4557A /* InfoPlist.strings */,
 				0BBF4C5017EEE50700B4557A /* main.m */,
@@ -381,6 +389,7 @@
 				0BBF4C5717EEE50700B4557A /* Default.png in Resources */,
 				0BBF4C5917EEE50700B4557A /* Default@2x.png in Resources */,
 				0BBF4C5B17EEE50700B4557A /* Default-568h@2x.png in Resources */,
+				0BAFD2C3184DE0DC00028BA5 /* ba.png in Resources */,
 				0BBF4C5E17EEE50700B4557A /* MainStoryboard_iPhone.storyboard in Resources */,
 				0BBF4C6117EEE50700B4557A /* MainStoryboard_iPad.storyboard in Resources */,
 				0BFF1DD217F67FA200F28C43 /* WeiboSDK.bundle in Resources */,
@@ -414,6 +423,7 @@
 				0B19B23E17EFEF57004D1810 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				0B19B23F17EFEF57004D1810 /* ASICloudFilesObject.m in Sources */,
 				0B19B24017EFEF57004D1810 /* ASICloudFilesObjectRequest.m in Sources */,
+				0BAFD2C9184DE21C00028BA5 /* FirstLoViewController.m in Sources */,
 				0B19B24117EFEF57004D1810 /* ASICloudFilesRequest.m in Sources */,
 				0B19B24217EFEF57004D1810 /* ASIS3Bucket.m in Sources */,
 				0B19B24317EFEF57004D1810 /* ASIS3BucketObject.m in Sources */,
@@ -523,6 +533,7 @@
 				GCC_PREFIX_HEADER = "LoginApp/LoginApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = "LoginApp/LoginApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libWeiboSDK\"",
@@ -543,6 +554,7 @@
 				GCC_PREFIX_HEADER = "LoginApp/LoginApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = "LoginApp/LoginApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libWeiboSDK\"",

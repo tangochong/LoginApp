@@ -1,0 +1,49 @@
+10
+
+dir
+0
+svn://192.168.1.110/coder/LoginApp/en.lproj
+svn://192.168.1.110/coder
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19ad0a9b-580c-402c-a007-1cb7f9023abb
+
+InfoPlist.strings
+file
+
+
+
+add
+
+MainStoryboard_iPad.storyboard
+file
+
+
+
+add
+
+MainStoryboard_iPhone.storyboard
+file
+
+
+
+add
+

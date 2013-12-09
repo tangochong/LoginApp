@@ -8,12 +8,16 @@
 
 #import "SinaViewController.h"
 #import "JSONKit.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
 @interface SinaViewController ()
 
 @end
 
 @implementation SinaViewController
 @synthesize webView;
+@synthesize _access_token;
+@synthesize _uid;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +32,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSString *urlString =@"https://api.weibo.com/oauth2/authorize?client_id=318745286&redirect_uri=http://weibo.com/638298000/home&response_type=code&display=mobile&state=authorize";
+    NSMutableString *urlString =[[NSMutableString alloc] initWithFormat:@"%@?client_id=%@&redirect_uri=%@&response_type=code&display=mobile&state=authorize",OAuth_URL,APP_KEY,APP_REDIRECT_URL];
      NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
        [self.webView setDelegate:self];
        [self.webView loadRequest:request];
@@ -64,40 +68,61 @@
         //获取code值
         NSString *codeString = [tempStr substringWithRange:range];
         NSLog(@"code = %@",codeString);
-      //获取access_token调用URL的string
-       NSMutableString *muString = [[NSMutableString alloc] initWithString:@"https://api.weibo.com/oauth2/access_token?client_id=318745286&client_secret=1f1fb2cfc78d064319dfee88c15b2adb&grant_type=authorization_code&redirect_uri=http://weibo.com/638298000/home&code="];
-        [muString appendString:codeString];
-        NSLog(@"access token url :%@",muString);
-        NSURL *urlstring = [NSURL URLWithString:muString];
-        //第一步，创建URL
-        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:urlstring cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
-        //创建请求
-        [request setHTTPMethod:@"POST"];//设置请求方式为POST，默认为GET  
-        NSString *str = @"type=focus-c";//设置参数  
-        NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
-        [request setHTTPBody:data];
-        //第三步，连接服务器  
-        NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-        NSString *str1 = [[NSString alloc] initWithData:received encoding:NSUTF8StringEncoding];
-        NSLog(@"back string :%@",str1);
-         //如何从str1中获取到access_token  
-        NSDictionary *directionary = [str1 objectFromJSONString];
-        NSLog(@"access token is :%@",[directionary objectForKey:@"access_token"]);
-         [self performSegueWithIdentifier:@"show" sender:nil];
+        //获取access_token
+        [self getAccessToken:codeString];
+        //获取用户id,name,头像地址
+        [self getUserInfo];
+        //跳转登陆成功页面
+        [self performSegueWithIdentifier:@"show" sender:nil];
     
     }
-    /*
-    NSRange range = [tempStr rangeOfString:@"code="];
-    if(!(range.location == NSNotFound)){
-        NSString *tempStr = [resultStr absoluteString];
-        NSArray *codeArr = [tempStr componentsSeparatedByString:@"="];
-        NSLog(@"codearr:%@",codeArr);
-        NSString *code = [codeArr objectAtIndex:1];
-        NSLog(@"code:%@",code);
-    }*/
     return  YES;
 }
++(NSString *) returnOAuthUrlString{
+    return  [NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@&response_type=code&display=mobile&state=authorize",OAuth_URL,APP_KEY,APP_REDIRECT_URL];
+}
+-(void) getAccessToken : (NSString *) code {
+    NSMutableString *accessTokenString = [[NSMutableString alloc] initWithFormat:@"%@?client_id=%@&client_secret=%@&grant_type=authorization_code&redirect_uri=%@&code=",ACCESS_TOKEN_URL,APP_KEY,APP_SECRET,APP_REDIRECT_URL];
+    [accessTokenString appendString:code];
+    NSURL *urlstring = [NSURL URLWithString:accessTokenString];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:urlstring cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    [request setHTTPMethod:@"POST"];
+    NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *backString = [[NSString alloc] initWithData:received encoding:NSUTF8StringEncoding];
+    NSDictionary *directionary = [backString objectFromJSONString];
+    [[NSUserDefaults standardUserDefaults] setObject:[directionary objectForKey:@"access_token"] forKey:@"access_token"];
+    [[NSUserDefaults standardUserDefaults] setObject:[directionary objectForKey:@"uid"] forKey:@"uid"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSString *access = [[NSUserDefaults standardUserDefaults] stringForKey:@"access_token"];
+    _access_token=access;
+    NSLog(@"access:%@",_access_token);
+    NSString *getuid = [[NSUserDefaults standardUserDefaults] stringForKey:@"uid"];
+    _uid=getuid;
+    NSLog(@"uid:%@",_uid);
+}
 
+-(void) getUserInfo {
+    
+
+    NSMutableString *UserInfoString = [[NSMutableString alloc] initWithFormat:@"%@?uid=%@&access_token=%@",USERINFO_URL,_uid,_access_token];
+    NSURL *urlstring = [NSURL URLWithString:UserInfoString];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:urlstring cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    [request setHTTPMethod:@"GET"];
+    NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *backString = [[NSString alloc] initWithData:received encoding:NSUTF8StringEncoding];
+    NSDictionary *directionary = [backString objectFromJSONString];
+     [[NSUserDefaults standardUserDefaults] setObject:[directionary objectForKey:@"id"] forKey:@"id"];
+     [[NSUserDefaults standardUserDefaults] setObject:[directionary objectForKey:@"screen_name"] forKey:@"screen_name"];
+     [[NSUserDefaults standardUserDefaults] setObject:[directionary objectForKey:@"profile_image_url"] forKey:@"profile_image_url"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSString *userId = [[NSUserDefaults standardUserDefaults] stringForKey:@"id"];
+    NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"screen_name"];
+    NSString *userImage = [[NSUserDefaults standardUserDefaults] stringForKey:@"profile_image_url"];
+    NSLog(@"id=%@;name=%@,image=%@",userId,userName,userImage);
+}
+-(void) getUIDString {
+   // NSString *uidURLString = [[NSString alloc]initWithFormat:@"%@?access_token=%@",GET_UID_URL,[InfoForSina //returnAccessTokenString]];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

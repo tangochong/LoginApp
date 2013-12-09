@@ -1,0 +1,154 @@
+10
+
+dir
+11
+svn://192.168.1.110/coder/LoginApp
+svn://192.168.1.110/coder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+incomplete
+19ad0a9b-580c-402c-a007-1cb7f9023abb
+
+main.m
+file
+0
+
+
+add
+
+MD5Hash.h
+file
+0
+
+
+add
+
+BIDAppDelegate.h
+file
+0
+
+
+add
+
+Default@2x.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+BIDViewController.h
+file
+0
+
+
+add
+
+MD5Hash.m
+file
+0
+
+
+add
+
+BIDAppDelegate.m
+file
+0
+
+
+add
+
+en.lproj
+dir
+
+
+
+add
+
+BIDViewController.m
+file
+0
+
+
+add
+
+LoginApp-Info.plist
+file
+0
+
+
+add
+
+SecondViewController.h
+file
+0
+
+
+add
+
+SecondViewController.m
+file
+0
+
+
+add
+
+Default.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Default-568h@2x.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+LoginApp-Prefix.pch
+file
+0
+
+
+add
+
